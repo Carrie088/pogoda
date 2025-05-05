@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-section">
+        <h1>Wybierz kraj i miasto</h1>
+        <form id="weatherForm">
+            <label for="country">Kraj:</label>
+            <select id="country" name="country">
+                <option value="PL">Polska</option>
+                <option value="GB">Wielka Brytania</option>
+                <option value="DE">Niemcy</option>
+                <option value="FR">Francja</option>
+                <option value="US">Stany Zjednoczone</option>
+                <option value="CN">Chiny</option>
+            </select>
+            <br>
+            <label for="city">Miasto:</label>
+            <input type="text" id="city" name="city" required>
+            <br>
+            <button type="submit">Sprawdź pogodę</button>
+        </form>
+    </div>
+
+    <div id="weatherSection" style="display: none;">
+        <h1>Aktualna pogoda</h1>
+        <div id="weatherInfo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
