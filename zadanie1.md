@@ -12,3 +12,4 @@ docker exec pogoda cat /app/log.txt
 docker history pogoda
 
 
+![Screenshot_20250506_085847](https://github.com/user-attachments/assets/cf365e0f-8dce-4fde-bc9c-f227c9afc534)
